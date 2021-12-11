@@ -40,10 +40,6 @@ from bpy.props import *
 # updater ops import, all setup in this file
 from . import addon_updater_ops
 
-# LOAD / RELOAD SUBMODULES #
-import importlib
-from . import developer_utils
-
 # LOAD CUSTOM ICONS #
 from . icons.icons  import load_icons
 from . icons.icons  import clear_icons
@@ -59,9 +55,6 @@ from .operators.ot_smooth     import *
 
 # LOAD UI # 
 from .ui_layout   import * 
-
-importlib.reload(developer_utils)
-modules = developer_utils.setup_addon_modules(__path__, __name__, "bpy" in locals())
 
 
 # PANEL TO CONTAINING THE TOOLS #
@@ -238,9 +231,9 @@ def register():
 
 
 def unregister():
+    # addon updater code and configurations
+    addon_updater_ops.unregister()
 
-    for cls in reversed(classes):
-        bpy.utils.unregister_class(cls)  
     try:
         del bpy.types.WindowManager.alignmesh_global_props
     except Exception as e:
@@ -248,6 +241,12 @@ def unregister():
         pass
 
     bpy.types.VIEW3D_MT_edit_mesh_vertices.remove(func_menu_vertices)
+
+    try:
+        for cls in reversed(classes):
+            bpy.utils.unregister_class(cls)
+    except RuntimeError:
+        pass
 
 
 if __name__ == "__main__":
