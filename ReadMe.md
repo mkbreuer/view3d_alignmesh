@@ -1,6 +1,6 @@
 # Align Mesh - Blender addon
 
-Align tools for vertices, edges and faces geometry in editmode:
+Align functions for geometries in editmode:
 - align selected in x-y-z or normal direction.
 - align to selected to global axis.
 - align selected to straight line.
