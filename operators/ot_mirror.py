@@ -15,10 +15,8 @@ class VIEW3D_OT_mirror_over_edge(bpy.types.Operator):
 
         bpy.context.scene.tool_settings.transform_pivot_point = 'ACTIVE_ELEMENT'  
 
-        bpy.ops.transform.mirror(orient_type='NORMAL', constraint_axis=(False, True, False), 
-                                 use_proportional_edit=False, proportional_edit_falloff='SMOOTH', 
-                                 proportional_size=1, use_proportional_connected=False, 
-                                 use_proportional_projected=False)
+        bpy.ops.transform.mirror(orient_type='NORMAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), 
+                                 orient_matrix_type='GLOBAL', constraint_axis=(False, True, False))
 
         bpy.ops.mesh.normals_make_consistent(inside=False)
        

@@ -127,9 +127,9 @@ class Addon_Preferences_align_mesh(bpy.types.AddonPreferences):
                ("GIMBAL"    ,"Gimbal"   ,"Gimbal"),
                ("VIEW"      ,"View"     ,"View"),
                ("CURSOR"    ,"Cursor"   ,"Cursor")],
-               name = "Orientation",
+               name = "Orientation XYZ",
                default = "GLOBAL",    
-               description = "change orientation axis")
+               description = "change orientation for xyz axis")
 
     #----------------------------
 

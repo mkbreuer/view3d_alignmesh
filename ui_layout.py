@@ -250,7 +250,7 @@ def draw_ui_panel_align_mesh(context, layout):
         box.separator()  
         
         row = box.row(align=True)
-        row.label(text="Orientation")     
+        row.label(text="Orientation:")     
         row.prop(addon_prefs, 'orient', text="")     
        
         box.separator()  
