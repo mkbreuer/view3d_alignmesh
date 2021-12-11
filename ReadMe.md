@@ -11,6 +11,10 @@ Align tools for vertices, edges and faces geometry in editmode:
 - modal uv seam or mark sharp creation of faces in combination with selected linked face. 
 - included addon functions from Looptools.
 
-The download go to https://github.com/mkbreuer/view3d_alignmesh/releases
+Release download: https://github.com/mkbreuer/view3d_alignmesh/releases
+
+Comes only with a panel interface! 
+But it is a part of the SnapSet addon, that has different context menus and a pie menu layout!
+https://github.com/mkbreuer/view3d_snapset
 
 ![Panel layout: ](./images/ui_alignmesh.png)
