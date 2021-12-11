@@ -13,8 +13,8 @@ Align tools for vertices, edges and faces geometry in editmode:
 
 Release download: https://github.com/mkbreuer/view3d_alignmesh/releases
 
-Comes only with a panel interface! 
-But it is a part of the SnapSet addon, that has different context menus and a pie menu layout!
-https://github.com/mkbreuer/view3d_snapset
+Comes only with a panel interface!
+- But it is a part of the SnapSet addon, that has different context menus and a pie menu layout!
+- https://github.com/mkbreuer/view3d_snapset
 
 ![Panel layout: ](./images/ui_alignmesh.png)
