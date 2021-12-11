@@ -25,7 +25,7 @@ bl_info = {
 "version": (0, 0, 3),
 "blender": (2, 82, 0),
 "location": "View3D > Editmode > Default Tab: Align > Panel: Align Mesh",
-"description": "align functions for mesh geometry",
+"description": "align functions for geometry",
 "warning": "",
 "wiki_url": "",
 "tracker_url": "",
