@@ -27,7 +27,7 @@ bl_info = {
 "location": "View3D > Editmode > Default Tab: Align > Panel: Align Mesh",
 "description": "align functions for geometries in editmode",
 "warning": "",
-"wiki_url": "",
+"wiki_url": "https://github.com/mkbreuer/view3d_alignmesh",
 "tracker_url": "",
 "category": "Mesh"}
 
@@ -176,14 +176,14 @@ class Addon_Preferences_align_mesh(bpy.types.AddonPreferences):
 
 
 def func_menu_vertices(self, context):
-        layout = self.layout
-        layout.operator_context = 'INVOKE_REGION_WIN'
-        layout.separator()
-        layout.operator('tpc_ot.shrinkwrap_smooth', text="Relax Quads")
-        layout.separator()
-        layout.operator('tpc_ot.vertex_align', text="Straight")
-        layout.operator('tpc_ot.vertex_distribute', text="Evenly")
-        layout.operator('tpc_ot.vertex_inline', text="Evenly Straight")
+    layout = self.layout
+    layout.operator_context = 'INVOKE_REGION_WIN'
+    layout.separator()
+    layout.operator('tpc_ot.shrinkwrap_smooth', text="Relax Quads")
+    layout.separator()
+    layout.operator('tpc_ot.vertex_align', text="Straight")
+    layout.operator('tpc_ot.vertex_distribute', text="Evenly")
+    layout.operator('tpc_ot.vertex_inline', text="Evenly Straight")
 
 
 
