@@ -19,6 +19,7 @@ Release download: https://github.com/mkbreuer/view3d_alignmesh/releases
 ![Panel layout: ](./images/ui_alignmesh.png)
 
 Comes only with a panel interface!
-- But it is a part of the SnapSet addon, that has different context menus and a pie menu layout!
+- But this addon is a part of the SnapSet pie menu!
 - https://github.com/mkbreuer/view3d_snapset
 
+![snapset pie menu](https://raw.githubusercontent.com/mkbreuer/view3d_snapset/master/images/pie_menu_layouts.png)
